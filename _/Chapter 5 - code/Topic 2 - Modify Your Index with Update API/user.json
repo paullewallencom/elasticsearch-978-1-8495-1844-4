@@ -1,0 +1,7 @@
+{
+ "user" : {
+  "properties" : {
+   "name" : {"type" : "string", "store" : "yes", "index" : "analyzed"}
+  }
+ }
+}

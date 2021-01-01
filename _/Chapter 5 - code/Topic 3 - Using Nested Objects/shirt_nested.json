@@ -1,0 +1,13 @@
+{
+ "name" : "Test shirt",
+ "variation" : [
+  {
+   "size" : "XXL",
+   "color" : "red"
+  },
+  {
+   "size" : "XL",
+   "color" : "black"
+  }
+ ]
+}

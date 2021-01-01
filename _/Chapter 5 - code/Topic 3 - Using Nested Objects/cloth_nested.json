@@ -1,0 +1,14 @@
+{
+ "cloth" : {
+  "properties" : {
+   "name" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+   "variation" : {
+    "type" : "nested",
+    "properties" : {
+     "size" : {"type" : "string", "store" : "yes", "index" : "not_analyzed"},
+     "color" : {"type" : "string", "store" : "yes", "index" : "not_analyzed"}
+    }
+   }
+  }
+ }
+}

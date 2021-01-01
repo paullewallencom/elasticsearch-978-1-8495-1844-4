@@ -1,0 +1,28 @@
+{
+ "book" : {
+  "properties" : {
+   "author" : {
+    "type" : "object",
+    "properties" : {
+     "name" : {
+      "type" : "object",
+      "properties" : {
+       "firstName" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+       "lastName" : {"type" : "string", "store" : "yes", "index" : "analyzed"}
+      }
+     }
+    }
+   },
+   "isbn" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+   "englishTitle" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+   "originalTitle" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+   "year" : {"type" : "integer", "store" : "yes"},
+   "characters" : {
+    "properties" : {
+     "name" : {"type" : "string", "store" : "yes", "index" : "analyzed"}
+    }
+   },
+   "copies" : {"type" : "integer", "store" : "yes"}
+  }
+ }
+}

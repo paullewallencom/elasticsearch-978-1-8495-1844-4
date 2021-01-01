@@ -1,0 +1,31 @@
+{
+ "settings" : {
+    "index" : {
+      "analysis": {
+        "analyzer": {
+          "en": {
+            "tokenizer": "standard",
+            "filter": [
+             "asciifolding",
+             "lowercase",
+             "ourEnglishFilter"
+            ]
+          }
+        },
+        "filter": {
+          "ourEnglishFilter": {
+            "type": "kstem"
+          }
+        }
+      }
+    }         
+  },
+ "mappings" : {
+  "post" : {
+   "properties" : {                
+    "id": { "type" : "long", "store" : "yes", "precision_step" : "0" },
+    "name": { "type" : "string", "store" : "yes", "index" : "analyzed", "analyzer": "en" }           
+   }
+  }
+ }
+}

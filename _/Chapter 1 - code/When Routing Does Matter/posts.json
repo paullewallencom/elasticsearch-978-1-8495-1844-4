@@ -1,0 +1,12 @@
+{
+ "mappings" : {
+  "post" : {
+   "properties" : {                
+    "id" : { "type" : "long", "store" : "yes", "precision_step" : "0" },
+    "name" : { "type" : "string", "store" : "yes", "index" : "analyzed" },
+    "contents" : { "type" : "string", "store" : "no", "index" : "analyzed" },
+    "userId" : { "type" : "long", "store" : "yes", "precision_step" : "0" }             
+   }
+  }
+ }
+}

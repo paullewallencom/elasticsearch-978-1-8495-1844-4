@@ -1,0 +1,22 @@
+{
+ "bool" : {
+  "must" : {
+   "term" : {
+    "title" : "crime"
+   }
+  },
+  "should" : {
+   "range : {
+    "year" : {
+     "from" : 1900,
+     "to" : 2000
+    }
+   }
+  },
+  "must_not" : {
+   "term" : {
+    "otitle" : "nothing"
+   }
+  }
+ }
+}

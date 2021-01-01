@@ -1,0 +1,18 @@
+{
+ "mappings" : {
+  "post" : {
+   "properties" : {                
+    "id": { "type" : "long", "store" : "yes", "precision_step" : "0" },
+    "name": {
+     "type": "multi_field",
+     "fields": {
+      "name": { "type" : "string", "index": "analyzed" },
+      "facet": { "type" : "string", "index": "not_analyzed" }
+     }
+    },
+    "published": { "type" : "date", "store" : "yes", "precision_step" : "0" },
+    "contents": { "type" : "string", "store" : "no", "index" : "analyzed" }             
+   }
+  }
+ }
+}

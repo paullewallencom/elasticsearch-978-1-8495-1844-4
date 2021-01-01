@@ -1,0 +1,9 @@
+{
+ "cloth" : {
+  "properties" : {
+   "name" : {"type" : "string", "store" : "yes", "index" : "analyzed"},
+   "size" : {"type" : "string", "store" : "yes", "index" : "not_analyzed"},
+   "color" : {"type" : "string", "store" : "yes", "index" : "not_analyzed"}
+  }
+ }
+}

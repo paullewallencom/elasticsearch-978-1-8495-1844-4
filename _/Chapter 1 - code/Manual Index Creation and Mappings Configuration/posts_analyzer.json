@@ -1,0 +1,14 @@
+{
+ "mappings" : {
+  "post" : {
+   "_analyzer" : {
+    "path" : "language"
+   },
+   "properties" : {                
+    "id": { "type" : "long", "store" : "yes", "precision_step" : "0" },
+    "name": { "type" : "string", "store" : "yes", "index" : "analyzed" },
+    "language": { "type" : "string", "store" : "yes", "index" : "not_analyzed"}           
+   }
+  }
+ }
+}

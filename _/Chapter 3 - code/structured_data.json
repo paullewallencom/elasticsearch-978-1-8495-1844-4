@@ -1,0 +1,23 @@
+{
+ "book" : {
+  "author" : {
+   "name" : {
+    "firstName" : "Fyodor",
+    "lastName" : "Dostoevsky"
+   }
+  },
+  "isbn" : "123456789",
+  "englishTitle" : "Crime and Punishment",
+  "originalTitle" : "Преступлéние и наказáние",
+  "year" : 1886,
+  "characters" : [
+   {
+    "name" : "Raskolnikov"
+   }, 
+   {
+    "name" : "Sofia"
+   }
+  ],
+  "copies" : 0
+ }
+}

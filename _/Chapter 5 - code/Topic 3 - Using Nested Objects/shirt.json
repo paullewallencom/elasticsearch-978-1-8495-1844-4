@@ -1,0 +1,5 @@
+{
+ "name" : "Test shirt",
+ "size" : [ "XXL", "XL" ],
+ "color" : [ "red", "black" ]
+}
